@@ -1,4 +1,5 @@
 from ciscoconfparse import CiscoConfParse
+import glob
 import pdb
 import sys
 import re
@@ -22,17 +23,20 @@ with open("golden.ini", "r") as f:
         continue
 
 # use netmiko or nornir in future
-devices = ["cisco-sw1", "cisco-sw2"]
+
+configs = glob.glob('configs/*.conf')
 
 # headings for csv output
 f = open("validation.csv", "w")
 print("device,","parent,","child1,","found")
 f.write("device,parent,child1,found\n")
 
-for d in devices:
+for config in configs:
+
+    d = config.replace("configs/","").replace(".conf","")
 
     # Parse the device config into objects
-    device_config = CiscoConfParse(f'{d}.conf', syntax='ios')
+    device_config = CiscoConfParse(f'{config}', syntax='ios')
     #pdb.set_trace()
 
     # global loop
