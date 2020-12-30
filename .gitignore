@@ -1,0 +1,4 @@
+.venv
+.vscode
+test-check.py
+temp.txt
