@@ -11,6 +11,7 @@ $ python config-validator.py
 ## Output
 
 Output is written to a CSV file where you can sort and filter using Excel or some other editor.
+
 <img src="filter_shot.jpg"></img>
 ## Future
 
