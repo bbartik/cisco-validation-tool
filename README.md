@@ -13,6 +13,16 @@ $ python config-validator.py
 Output is written to a CSV file where you can sort and filter using Excel or some other editor.
 
 <img src="images/image1.jpg"></img>
+
+## Filter interfaces
+
+In the script you can filter the interface. Below we are only getting the 12th-13th interfaces which happen to be g1/0/12-13.
+
+```
+    #REDUCE LIST FOR TEST ONLY
+    interface_list = [i.text for i in interfaces]
+    #interface_list = [i.text for i in interfaces][12:14]
+```
 ## Future
 
 - Add netmiko support (Currently just searcges local dir for conf files)

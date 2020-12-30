@@ -84,8 +84,8 @@ for config in configs:
     # build interface list for device
     interfaces = device_config.find_objects('^interface.*Eth')
     #REDUCE LIST FOR TEST ONLY
-    #interface_list = [i.text for i in interfaces]
-    interface_list = [i.text for i in interfaces][12:14]
+    interface_list = [i.text for i in interfaces]
+    #interface_list = [i.text for i in interfaces][12:14]
 
     # interface loop
     for i in interface_list:
