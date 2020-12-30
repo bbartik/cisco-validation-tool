@@ -3,6 +3,8 @@ import glob
 import pdb
 import sys
 import re
+import os
+import csv
 
 sections = {}
 
@@ -28,7 +30,6 @@ configs = glob.glob('configs/*.conf')
 
 # headings for csv output
 f = open("validation.csv", "w")
-print("device,","parent,","child1,","found")
 f.write("device,parent,child1,found\n")
 
 for config in configs:
@@ -83,9 +84,10 @@ for config in configs:
 
     # build interface list for device
     interfaces = device_config.find_objects('^interface.*Eth')
-    #REDUCE LIST FOR TEST ONLY
-    interface_list = [i.text for i in interfaces]
-    #interface_list = [i.text for i in interfaces][12:14]
+
+    # FILTER INTERFACE LIST
+    #interface_list = [i.text for i in interfaces]
+    interface_list = [i.text for i in interfaces][12:14]
 
     # interface loop
     for i in interface_list:
@@ -111,5 +113,44 @@ for config in configs:
                 f.write(to_write)
 
 f.close()    
+
+print("\nCompleted. Please check validation.csv for results.\n")
+
+#answer = input("Create device configs? [y/n] ")
+
+answer = "y"
+if answer == "y":
+
+    updates = glob.glob('updates/*.conf')
+    for u in updates:
+        os.remove(u)
+
+    with open('validation.csv', newline='') as csvfile:
+        config_data = csv.reader(csvfile, delimiter=',')
+        lines = [x for x in config_data]
+        lines = [x for x in lines[1:] if x[3] == "not found"]
+
+        parent_line = ""
+        for line in lines:
+            filename = f"updates/{line[0]}_updates.conf"
+            with open(filename, "a+") as f:
+                if "interface" in line[1] and parent_line != line[1]:
+                    f.write("!\n")
+                if parent_line != line[1]:
+                    f.write(line[1])
+                    f.write("\n")
+                    if line[2] != "":
+                        f.write(line[2])
+                        f.write("\n")
+                else:
+                    f.write(line[2])
+                    f.write("\n")
+                parent_line = line[1]
+
+        
+
+  
+        
+
             
 

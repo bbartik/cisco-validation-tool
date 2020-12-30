@@ -8,9 +8,10 @@ This tool was meant to help validate some Cisco ISE specific configurations. It 
 $ python config-validator.py
 ```
 
-## Output
+## Outputs
 
-Output is written to a CSV file where you can sort and filter using Excel or some other editor.
+Output is written to "validation.csv" where you can sort and filter using Excel or some other editor. 
+Config snippets to add the not found are written to ./updates/[devicename].conf
 
 <img src="images/image1.jpg"></img>
 
@@ -26,5 +27,4 @@ In the script you can filter the interface. Below we are only getting the 12th-1
 ## Future
 
 - Add netmiko support (Currently just searches ./configs for .conf files)
-- Add option to create a Cisco config script to add in the "not founds"
 
