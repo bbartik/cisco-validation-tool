@@ -12,7 +12,7 @@ $ python config-validator.py
 
 Output is written to a CSV file where you can sort and filter using Excel or some other editor.
 
-<img src="filter_shot.jpg"></img>
+<img src="images/image1.jpg"></img>
 ## Future
 
 - Add netmiko support (Currently just searcges local dir for conf files)
