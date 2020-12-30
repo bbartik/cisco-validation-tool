@@ -25,6 +25,6 @@ In the script you can filter the interface. Below we are only getting the 12th-1
 ```
 ## Future
 
-- Add netmiko support (Currently just searches local dir for conf files)
+- Add netmiko support (Currently just searches ./configs for .conf files)
 - Add option to create a Cisco config script to add in the "not founds"
 
