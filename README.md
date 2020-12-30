@@ -19,9 +19,9 @@ Output is written to a CSV file where you can sort and filter using Excel or som
 In the script you can filter the interface. Below we are only getting the 12th-13th interfaces which happen to be g1/0/12-13.
 
 ```
-    #REDUCE LIST FOR TEST ONLY
-    interface_list = [i.text for i in interfaces]
-    #interface_list = [i.text for i in interfaces][12:14]
+    # FILTER INTERFACE LIST
+    #interface_list = [i.text for i in interfaces]
+    interface_list = [i.text for i in interfaces][12:14]
 ```
 ## Future
 
