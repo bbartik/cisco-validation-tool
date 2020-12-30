@@ -1,6 +1,6 @@
 # cisco-validation-tool
 
-This tool was meant to help validate some Cisco ISE specific configurations. It uses a file called "golden.ini" where you can put global or interface "golden" paramters. The script than uses CiscoConfParse to search for the golden lines and report whether they are found or not.
+This tool was meant to help validate some Cisco ISE specific configurations. It uses a file called "golden.ini" where you can put global or interface "golden" parameters. The script than uses CiscoConfParse to search for the golden lines and report whether they are found or not.
 
 ## Usage
 
