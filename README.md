@@ -10,10 +10,11 @@ $ python config-validator.py
 
 ## Outputs
 
-Output is written to "validation.csv" where you can sort and filter using Excel or some other editor. 
-Config snippets to add the not found are written to ./updates/[devicename].conf
+Output is written to a file named "validation.csv" where you can sort and filter using Excel or some other editor. 
 
 <img src="images/image1.jpg"></img>
+
+Config snippets for updating devices are written to ./updates/[devicename].conf
 
 ## Filter interfaces
 
