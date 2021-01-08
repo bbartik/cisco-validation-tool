@@ -4,7 +4,7 @@ This tool was meant to help validate some Cisco ISE specific configurations. It 
 
 ## Usage
 
-Enter device hostname or IPs in devices.txt
+Enter device hostname or IPs in devices.txt.
 
 Get the configs and store in ./configs:
 ```

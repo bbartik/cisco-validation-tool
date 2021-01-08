@@ -1,74 +1,74 @@
 device,parent,child1,found
-cisco-sw1,aaa new-model,,found
-cisco-sw1,aaa group server radius ISE, server name 10.4.87.25,found
-cisco-sw1,aaa authentication login default local group ISE,,not found
-cisco-sw1,aaa authentication enable default enable,,found
-cisco-sw1,aaa authentication dot1x default group ISE,,found
-cisco-sw1,aaa authorization network default group ISE ,,found
-cisco-sw1,aaa authorization network auth-list group ISE ,,found
-cisco-sw1,aaa accounting update newinfo periodic 2880,,found
-cisco-sw1,aaa accounting identity default start-stop group ISE,,found
-cisco-sw1,aaa server radius dynamic-author, client 10.4.87.25 server-key 7 blahblah,found
-cisco-sw1,device-sensor filter-list lldp list iseLLDP, tlv name system-name,found
-cisco-sw1,device-sensor filter-list lldp list iseLLDP, tlv name system-description,found
-cisco-sw1,device-sensor filter-list lldp list iseLLDP, tlv name system-capabilities,found
-cisco-sw1,interface GigabitEthernet1/0/12, description Workstation_Phone,not found
-cisco-sw1,interface GigabitEthernet1/0/12, switchport access vlan 432,found
-cisco-sw1,interface GigabitEthernet1/0/12, switchport mode access,found
-cisco-sw1,interface GigabitEthernet1/0/12, switchport voice vlan 429,found
-cisco-sw1,interface GigabitEthernet1/0/12, access-session port-control auto,found
-cisco-sw1,interface GigabitEthernet1/0/12, mab,found
-cisco-sw1,interface GigabitEthernet1/0/12, snmp trap mac-notification change added,found
-cisco-sw1,interface GigabitEthernet1/0/12, snmp trap mac-notification change removed,found
-cisco-sw1,interface GigabitEthernet1/0/12, dot1x pae authenticator,found
-cisco-sw1,interface GigabitEthernet1/0/12, spanning-tree portfast,found
-cisco-sw1,interface GigabitEthernet1/0/12, service-policy type control subscriber POLICY_DOT1X,found
-cisco-sw1,interface GigabitEthernet1/0/13, description Workstation_Phone,not found
-cisco-sw1,interface GigabitEthernet1/0/13, switchport access vlan 432,not found
-cisco-sw1,interface GigabitEthernet1/0/13, switchport mode access,found
-cisco-sw1,interface GigabitEthernet1/0/13, switchport voice vlan 429,not found
-cisco-sw1,interface GigabitEthernet1/0/13, access-session port-control auto,not found
-cisco-sw1,interface GigabitEthernet1/0/13, mab,not found
-cisco-sw1,interface GigabitEthernet1/0/13, snmp trap mac-notification change added,not found
-cisco-sw1,interface GigabitEthernet1/0/13, snmp trap mac-notification change removed,not found
-cisco-sw1,interface GigabitEthernet1/0/13, dot1x pae authenticator,not found
-cisco-sw1,interface GigabitEthernet1/0/13, spanning-tree portfast,not found
-cisco-sw1,interface GigabitEthernet1/0/13, service-policy type control subscriber POLICY_DOT1X,not found
-cisco-sw2,aaa new-model,,found
-cisco-sw2,aaa group server radius ISE,,not found
-cisco-sw2,aaa group server radius ISE, server name 10.4.87.25,not found
-cisco-sw2,aaa authentication login default local group ISE,,not found
-cisco-sw2,aaa authentication enable default enable,,not found
-cisco-sw2,aaa authentication dot1x default group ISE,,not found
-cisco-sw2,aaa authorization network default group ISE,,not found
-cisco-sw2,aaa authorization network auth-list group ISE,,not found
-cisco-sw2,aaa accounting update newinfo periodic 2880,,not found
-cisco-sw2,aaa accounting identity default start-stop group ISE,,not found
-cisco-sw2,aaa server radius dynamic-author,,not found
-cisco-sw2,aaa server radius dynamic-author, client 10.4.87.25 server-key 7 blahblah,not found
-cisco-sw2,device-sensor filter-list lldp list iseLLDP,,not found
-cisco-sw2,device-sensor filter-list lldp list iseLLDP, tlv name system-name,not found
-cisco-sw2,device-sensor filter-list lldp list iseLLDP, tlv name system-description,not found
-cisco-sw2,device-sensor filter-list lldp list iseLLDP, tlv name system-capabilities,not found
-cisco-sw2,interface GigabitEthernet1/0/12, description Workstation_Phone,not found
-cisco-sw2,interface GigabitEthernet1/0/12, switchport access vlan 432,not found
-cisco-sw2,interface GigabitEthernet1/0/12, switchport mode access,not found
-cisco-sw2,interface GigabitEthernet1/0/12, switchport voice vlan 429,not found
-cisco-sw2,interface GigabitEthernet1/0/12, access-session port-control auto,not found
-cisco-sw2,interface GigabitEthernet1/0/12, mab,not found
-cisco-sw2,interface GigabitEthernet1/0/12, snmp trap mac-notification change added,not found
-cisco-sw2,interface GigabitEthernet1/0/12, snmp trap mac-notification change removed,not found
-cisco-sw2,interface GigabitEthernet1/0/12, dot1x pae authenticator,not found
-cisco-sw2,interface GigabitEthernet1/0/12, spanning-tree portfast,not found
-cisco-sw2,interface GigabitEthernet1/0/12, service-policy type control subscriber POLICY_DOT1X,not found
-cisco-sw2,interface GigabitEthernet1/0/13, description Workstation_Phone,not found
-cisco-sw2,interface GigabitEthernet1/0/13, switchport access vlan 432,not found
-cisco-sw2,interface GigabitEthernet1/0/13, switchport mode access,not found
-cisco-sw2,interface GigabitEthernet1/0/13, switchport voice vlan 429,not found
-cisco-sw2,interface GigabitEthernet1/0/13, access-session port-control auto,not found
-cisco-sw2,interface GigabitEthernet1/0/13, mab,not found
-cisco-sw2,interface GigabitEthernet1/0/13, snmp trap mac-notification change added,not found
-cisco-sw2,interface GigabitEthernet1/0/13, snmp trap mac-notification change removed,not found
-cisco-sw2,interface GigabitEthernet1/0/13, dot1x pae authenticator,not found
-cisco-sw2,interface GigabitEthernet1/0/13, spanning-tree portfast,not found
-cisco-sw2,interface GigabitEthernet1/0/13, service-policy type control subscriber POLICY_DOT1X,not found
+172.28.247.100,aaa new-model,,found
+172.28.247.100,aaa group server radius ISE,,not found
+172.28.247.100,aaa group server radius ISE, server name 10.4.87.25,not found
+172.28.247.100,aaa authentication login default local group ISE,,not found
+172.28.247.100,aaa authentication enable default enable,,not found
+172.28.247.100,aaa authentication dot1x default group ISE,,not found
+172.28.247.100,aaa authorization network default group ISE,,not found
+172.28.247.100,aaa authorization network auth-list group ISE,,not found
+172.28.247.100,aaa accounting update newinfo periodic 2880,,not found
+172.28.247.100,aaa accounting identity default start-stop group ISE,,not found
+172.28.247.100,aaa server radius dynamic-author,,not found
+172.28.247.100,aaa server radius dynamic-author, client 10.4.87.25 server-key 7 blahblah,not found
+172.28.247.100,device-sensor filter-list lldp list iseLLDP,,not found
+172.28.247.100,device-sensor filter-list lldp list iseLLDP, tlv name system-name,not found
+172.28.247.100,device-sensor filter-list lldp list iseLLDP, tlv name system-description,not found
+172.28.247.100,device-sensor filter-list lldp list iseLLDP, tlv name system-capabilities,not found
+172.28.247.100,interface GigabitEthernet1/0/12, description Workstation_Phone,not found
+172.28.247.100,interface GigabitEthernet1/0/12, switchport access vlan 432,not found
+172.28.247.100,interface GigabitEthernet1/0/12, switchport mode access,not found
+172.28.247.100,interface GigabitEthernet1/0/12, switchport voice vlan 429,not found
+172.28.247.100,interface GigabitEthernet1/0/12, access-session port-control auto,not found
+172.28.247.100,interface GigabitEthernet1/0/12, mab,not found
+172.28.247.100,interface GigabitEthernet1/0/12, snmp trap mac-notification change added,not found
+172.28.247.100,interface GigabitEthernet1/0/12, snmp trap mac-notification change removed,not found
+172.28.247.100,interface GigabitEthernet1/0/12, dot1x pae authenticator,not found
+172.28.247.100,interface GigabitEthernet1/0/12, spanning-tree portfast,not found
+172.28.247.100,interface GigabitEthernet1/0/12, service-policy type control subscriber POLICY_DOT1X,not found
+172.28.247.100,interface GigabitEthernet1/0/13, description Workstation_Phone,not found
+172.28.247.100,interface GigabitEthernet1/0/13, switchport access vlan 432,not found
+172.28.247.100,interface GigabitEthernet1/0/13, switchport mode access,not found
+172.28.247.100,interface GigabitEthernet1/0/13, switchport voice vlan 429,not found
+172.28.247.100,interface GigabitEthernet1/0/13, access-session port-control auto,not found
+172.28.247.100,interface GigabitEthernet1/0/13, mab,not found
+172.28.247.100,interface GigabitEthernet1/0/13, snmp trap mac-notification change added,not found
+172.28.247.100,interface GigabitEthernet1/0/13, snmp trap mac-notification change removed,not found
+172.28.247.100,interface GigabitEthernet1/0/13, dot1x pae authenticator,not found
+172.28.247.100,interface GigabitEthernet1/0/13, spanning-tree portfast,not found
+172.28.247.100,interface GigabitEthernet1/0/13, service-policy type control subscriber POLICY_DOT1X,not found
+172.28.247.102,aaa new-model,,found
+172.28.247.102,device-sensor filter-list lldp list iseLLDP, server name 10.4.87.25,not found
+172.28.247.102,aaa authentication login default local group ISE,,not found
+172.28.247.102,aaa authentication enable default enable,,found
+172.28.247.102,aaa authentication dot1x default group ISE,,found
+172.28.247.102,aaa authorization network default group ISE ,,found
+172.28.247.102,aaa authorization network auth-list group ISE ,,found
+172.28.247.102,aaa accounting update newinfo periodic 2880,,found
+172.28.247.102,aaa accounting identity default start-stop group ISE,,found
+172.28.247.102,aaa authentication login default local group ISE, client 10.4.87.25 server-key 7 blahblah,not found
+172.28.247.102,device-sensor filter-list lldp list iseLLDP, tlv name system-name,found
+172.28.247.102,device-sensor filter-list lldp list iseLLDP, tlv name system-description,found
+172.28.247.102,device-sensor filter-list lldp list iseLLDP, tlv name system-capabilities,found
+172.28.247.102,interface GigabitEthernet1/0/12, description Workstation_Phone,not found
+172.28.247.102,interface GigabitEthernet1/0/12, switchport access vlan 432,found
+172.28.247.102,interface GigabitEthernet1/0/12, switchport mode access,found
+172.28.247.102,interface GigabitEthernet1/0/12, switchport voice vlan 429,found
+172.28.247.102,interface GigabitEthernet1/0/12, access-session port-control auto,found
+172.28.247.102,interface GigabitEthernet1/0/12, mab,found
+172.28.247.102,interface GigabitEthernet1/0/12, snmp trap mac-notification change added,found
+172.28.247.102,interface GigabitEthernet1/0/12, snmp trap mac-notification change removed,found
+172.28.247.102,interface GigabitEthernet1/0/12, dot1x pae authenticator,found
+172.28.247.102,interface GigabitEthernet1/0/12, spanning-tree portfast,found
+172.28.247.102,interface GigabitEthernet1/0/12, service-policy type control subscriber POLICY_DOT1X,found
+172.28.247.102,interface GigabitEthernet1/0/13, description Workstation_Phone,not found
+172.28.247.102,interface GigabitEthernet1/0/13, switchport access vlan 432,not found
+172.28.247.102,interface GigabitEthernet1/0/13, switchport mode access,found
+172.28.247.102,interface GigabitEthernet1/0/13, switchport voice vlan 429,not found
+172.28.247.102,interface GigabitEthernet1/0/13, access-session port-control auto,not found
+172.28.247.102,interface GigabitEthernet1/0/13, mab,found
+172.28.247.102,interface GigabitEthernet1/0/13, snmp trap mac-notification change added,not found
+172.28.247.102,interface GigabitEthernet1/0/13, snmp trap mac-notification change removed,not found
+172.28.247.102,interface GigabitEthernet1/0/13, dot1x pae authenticator,found
+172.28.247.102,interface GigabitEthernet1/0/13, spanning-tree portfast,not found
+172.28.247.102,interface GigabitEthernet1/0/13, service-policy type control subscriber POLICY_DOT1X,not found
