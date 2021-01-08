@@ -4,6 +4,14 @@ This tool was meant to help validate some Cisco ISE specific configurations. It 
 
 ## Usage
 
+Enter device hostname or IPs in devices.txt
+
+Get the configs and store in ./configs:
+```
+$ python config-getter.py
+```
+
+Validate the configuration:
 ```
 $ python config-validator.py
 ```
@@ -25,7 +33,4 @@ In the script you can filter the interface. Below we are only getting the 12th-1
     #interface_list = [i.text for i in interfaces]
     interface_list = [i.text for i in interfaces][12:14]
 ```
-## Future
-
-- Add netmiko support (Currently just searches ./configs for .conf files)
 
